@@ -1,6 +1,3 @@
-Claro, aquí tienes un ejemplo de un README más completo, basado en los avances que has logrado y los pasos siguientes que debes seguir:
-
-```markdown
 # Dashboard Interativo de Marketing Digital
 
 Dashboard interativo para monitorar e analisar o desempenho de campanhas de marketing digital em tempo real.
@@ -134,7 +131,3 @@ Este projeto está licenciado sob os termos da licença MIT.
 ## Contribuição
 
 Sinta-se à vontade para abrir issues e enviar pull requests. Toda contribuição é bem-vinda!
-
-```
-
-Este README fornece uma visão geral completa do projeto até o ponto atual, além de orientações sobre os próximos passos e como executar o projeto. Se precisar de mais alguma coisa, é só avisar!
