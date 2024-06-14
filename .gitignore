@@ -96,7 +96,6 @@ venv.bak/
 .pip
 .pip-*
 
-
 # Spyder project settings
 .spyderproject
 
@@ -111,3 +110,8 @@ venv.bak/
 
 # Pyre type checker
 .pyre/
+
+# Credenciales y configuraciones sensibles
+client_secret.json
+config.json
+token.json
