@@ -111,7 +111,7 @@ venv.bak/
 # Pyre type checker
 .pyre/
 
-# Credentials y config
+# Credenciales y configuraciones sensibles
 client_secret.json
 config.json
 token.json
