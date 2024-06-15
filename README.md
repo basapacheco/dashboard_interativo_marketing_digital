@@ -1,19 +1,26 @@
-# Dashboard Interativo de Marketing Digital
+# 📊 Dashboard Interativo de Marketing Digital
 
-Dashboard interativo para monitorar e analisar o desempenho de campanhas de marketing digital em tempo real.
+Bem-vindo ao dashboard interativo de marketing digital, uma ferramenta poderosa para monitorar e analisar o desempenho de campanhas de marketing digital em tempo real.
 
-## Descrição
+## 🚀 Descrição
 
-Este projeto cria um dashboard interativo para monitorar e analisar o desempenho de campanhas de marketing digital em diversas plataformas, facilitando a tomada de decisões baseada em dados.
+Este projeto cria um dashboard interativo para monitorar e analisar o desempenho de campanhas de marketing digital em diversas plataformas, facilitando a tomada de decisões baseada em dados. Ele permite a visualização centralizada de métricas chave de marketing, fornecendo insights valiosos para otimizar campanhas.
 
-## Ferramentas Utilizadas
+## 🌟 Benefícios
+
+- **Monitoramento em Tempo Real**: Acompanhe suas campanhas de marketing digital em tempo real.
+- **Insights Aprofundados**: Obtenha insights detalhados sobre o desempenho de suas campanhas.
+- **Visualizações Interativas**: Utilize gráficos dinâmicos e interativos para explorar seus dados.
+- **Decisões Informadas**: Facilite a tomada de decisões baseada em dados precisos e atualizados.
+
+## 🛠️ Ferramentas Utilizadas
 
 - **Python**: Pandas, Plotly, Dash
 - **APIs**: Google Analytics API, Facebook Graph API
 - **Jupyter Notebook**: Para análise e prototipagem
-- **Dash**: Para criar o dashboard interativo
+- **Dash**: Para criação do dashboard interativo
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```plaintext
 marketing_dashboard_project/
@@ -23,6 +30,7 @@ marketing_dashboard_project/
 ├── notebooks/
 │   ├── criacao_dados_ficticios.ipynb
 │   ├── data_analysis.ipynb
+│   ├── data_visualization.ipynb
 ├── src/
 │   ├── data_loader.py
 │   ├── data_visualization.py
@@ -35,68 +43,20 @@ marketing_dashboard_project/
 ├── requirements.txt
 ```
 
-## Passos Realizados
+## 📝 Guia Rápido
 
-### 1. Configuração do Projeto no Google Cloud Console
+### Pré-requisitos
 
-- Habilitada a Google Analytics API.
-- Obtidas as credenciais OAuth2.
+- **Python 3.7 ou superior**
+- **Conta no Google Cloud Platform e Facebook Developers**
+- **Credenciais para APIs do Google Analytics e Facebook**
 
-### 2. Configuração da Aplicação no Facebook Developers Portal
-
-- Criada uma aplicação e adicionado o produto "Marketing API".
-- Gerado um token de acesso.
-
-### 3. Autenticação e Gerenciamento de Credenciais
-
-- Criados os arquivos `client_secret.json` e `config.json`.
-- Atualizado o `.gitignore` para excluir arquivos sensíveis.
-
-### 4. Geração de Dados Fictícios
-
-- Gerados dados fictícios para Google Analytics e Facebook Ads nos arquivos `google_analytics_data.json` e `facebook_ads_data.json`.
-
-### 5. Análise de Dados
-
-- **Notebook**: `data_analysis.ipynb`
-  - Importação e exploração dos dados coletados utilizando Pandas.
-  - Análise exploratória de dados (EDA).
-
-### 6. Visualização
-
-- **Notebook**: `data_visualization.ipynb`
-  - Criação de gráficos interativos com Plotly para representar as métricas chave.
-
-## Próximos Passos
-
-### 7. Desenvolvimento do Dashboard
-
-- **Arquivo**: `src/dashboard.py`
-  - Configurar um ambiente Dash.
-  - Integrar os gráficos interativos criados com Plotly.
-  - Desenhar uma interface de usuário intuitiva.
-
-### 8. Deploy
-
-- **Arquivo**: `Procfile`
-  - Configuração para deploy no Heroku.
-
-- **Comandos para Deploy**:
-  ```bash
-  git init
-  heroku create
-  git add .
-  git commit -m "Initial commit"
-  git push heroku master
-  heroku open
-  ```
-
-## Como Executar o Projeto
+### Instalação
 
 1. **Clonar o repositório**:
    ```bash
-   git clone https://github.com/seu_usuario/dashboard_inteartive_marketing_digital.git
-   cd dashboard_inteartive_marketing_digital
+   git clone https://github.com/seu_usuario/dashboard_interativo_marketing_digital.git
+   cd dashboard_interativo_marketing_digital
    ```
 
 2. **Criar e ativar um ambiente virtual**:
@@ -110,24 +70,61 @@ marketing_dashboard_project/
    pip install -r requirements.txt
    ```
 
-4. **Executar o notebook para gerar os dados fictícios**:
-   - `notebooks/criacao_dados_ficticios.ipynb`
+4. **Configurar credenciais das APIs**:
+   - Adicione os arquivos `client_secret.json` e `config.json` na pasta `data`.
 
-5. **Executar o notebook para a análise de dados**:
-   - `notebooks/data_analysis.ipynb`
+5. **Gerar dados fictícios**:
+   - Execute o notebook `notebooks/criacao_dados_ficticios.ipynb` no Jupyter Notebook.
 
-6. **Executar o notebook para a visualização de dados**:
-   - `notebooks/data_visualization.ipynb`
+6. **Analisar dados**:
+   - Execute o notebook `notebooks/data_analysis.ipynb` para análise de dados.
 
-7. **Executar o dashboard**:
+7. **Visualizar dados**:
+   - Execute o notebook `notebooks/data_visualization.ipynb` para visualização de dados.
+
+8. **Executar o dashboard**:
    ```bash
    python src/dashboard.py
    ```
 
-## Licença
+### Deploy no Heroku
+
+1. **Inicializar repositório Git e criar aplicativo Heroku**:
+   ```bash
+   git init
+   heroku create
+   git add .
+   git commit -m "Initial commit"
+   git push heroku master
+   heroku open
+   ```
+
+## 📸 Exemplos Visuais
+
+### Capturas de Tela
+
+![Exemplo de Gráfico](path/to/screenshot.png)
+
+*Adicione uma captura de tela do dashboard aqui para ilustrar o que os usuários podem esperar.*
+
+## 📂 Estrutura dos Arquivos
+
+### `data_loader.py`
+
+Carrega e processa dados das APIs.
+
+### `data_visualization.py`
+
+Cria gráficos interativos usando Plotly.
+
+### `dashboard.py`
+
+Configura o layout e a lógica do dashboard com Dash.
+
+## 📝 Licença
 
 Este projeto está licenciado sob os termos da licença MIT.
 
-## Contribuição
+## 🤝 Contribuição
 
 Sinta-se à vontade para abrir issues e enviar pull requests. Toda contribuição é bem-vinda!
