@@ -99,13 +99,6 @@ marketing_dashboard_project/
    heroku open
    ```
 
-## 📸 Exemplos Visuais
-
-### Capturas de Tela
-
-![Exemplo de Gráfico](path/to/screenshot.png)
-
-*Adicione uma captura de tela do dashboard aqui para ilustrar o que os usuários podem esperar.*
 
 ## 📂 Estrutura dos Arquivos
 
