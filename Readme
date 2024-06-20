@@ -1,0 +1,67 @@
+# 🎮 Análisis de Dataset de Ventas de Videojuegos
+
+## Descripción
+
+Este dataset contiene una lista de videojuegos con ventas superiores a 100,000 copias, obtenidos mediante scraping de vgchartz.com.
+
+### Atributos
+
+- **Rank**: Ranking de ventas totales.
+- **Nombre**: Nombre del juego.
+- **Plataforma**: Plataforma de lanzamiento del juego (ej. PC, PS4, etc.).
+- **Año**: Año de lanzamiento del juego.
+- **Género**: Género del juego.
+- **Editor**: Editor del juego.
+- **Ventas NA**: Ventas en América del Norte (en millones).
+- **Ventas EU**: Ventas en Europa (en millones).
+- **Ventas JP**: Ventas en Japón (en millones).
+- **Otras Ventas**: Ventas en el resto del mundo (en millones).
+- **Ventas Globales**: Ventas totales en todo el mundo.
+
+## Librerías Utilizadas
+
+```python
+import os  # rutas a archivos
+import numpy as np  # álgebra lineal
+import pandas as pd  # procesamiento de datos
+import warnings  # filtro de advertencias
+
+# Librerías de visualización
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.graph_objects as go
+
+# Librerías de Machine Learning
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score, r2_score
+from sklearn.model_selection import cross_val_score
+
+# Modelos de Machine Learning
+from sklearn.linear_model import Ridge, LinearRegression
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.neighbors import KNeighborsRegressor
+
+# Fases del Análisis
+1. Vista Previa de los Datos
+2. Detección de Duplicados
+3. Preprocesamiento de Datos
+4. Análisis Exploratorio de Datos (EDA)
+5. Manejo de Valores Atípicos
+6. División de Datos (Entrenamiento | Prueba)
+7. Modelado
+Regresión Ridge
+Regresión Lineal
+K-Vecinos Más Cercanos (KNN)
+Conclusiones
+
+# Hallazgos Clave
+La mayoría de los juegos se produjeron para la plataforma DS, seguida por PS2.
+Los géneros más populares son Acción y Deportes; Puzzle es el menos popular.
+La editora más destacada es Electronic Arts.
+La mayoría de los juegos se produjeron entre 2002 y 2016, con un pico alrededor de 2010.
+Los juegos de Acción son los más frecuentemente publicados.
+Las ventas alcanzaron su punto máximo entre 2005 y 2010, con ventas más bajas en los años 1980 y 1990.
+# Mejores Modelos
+Los modelos que mejor rendimiento mostraron fueron la Regresión Ridge y la Regresión Lineal.
