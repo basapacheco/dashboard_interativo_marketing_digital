@@ -83,9 +83,11 @@ marketing_dashboard_project/
    - Execute o notebook `notebooks/data_visualization.ipynb` para visualização de dados.
 
 8. **Executar o dashboard**:
-   ```bash
-   python src/dashboard.py
-   ```
+   - Inicie o servidor do Dash:
+     ```bash
+     python src/dashboard.py
+     ```
+   - Abra o navegador e acesse [http://127.0.0.1:8050/](http://127.0.0.1:8050/) para visualizar o dashboard.
 
 ### Deploy no Heroku
 
@@ -98,7 +100,6 @@ marketing_dashboard_project/
    git push heroku master
    heroku open
    ```
-
 
 ## 📂 Estrutura dos Arquivos
 
@@ -121,3 +122,4 @@ Este projeto está licenciado sob os termos da licença MIT.
 ## 🤝 Contribuição
 
 Sinta-se à vontade para abrir issues e enviar pull requests. Toda contribuição é bem-vinda!
+
