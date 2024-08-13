@@ -6,6 +6,8 @@ Bem-vindo ao dashboard interativo de marketing digital, uma ferramenta poderosa 
 
 Este projeto cria um dashboard interativo para monitorar e analisar o desempenho de campanhas de marketing digital em diversas plataformas, facilitando a tomada de decisões baseada em dados. Ele permite a visualização centralizada de métricas chave de marketing, fornecendo insights valiosos para otimizar campanhas.
 
+**Nota:** Os dados de Facebook Ads utilizados neste projeto são fictícios, já que não há campanhas reais disponíveis. No entanto, o código está preparado para extrair dados reais de campanhas de Facebook Ads caso você configure a API corretamente.
+
 ## 🌟 Benefícios
 
 - **Monitoramento em Tempo Real**: Acompanhe suas campanhas de marketing digital em tempo real.
@@ -73,17 +75,39 @@ marketing_dashboard_project/
 4. **Configurar credenciais das APIs**:
    - Adicione os arquivos `client_secret.json` e `config.json` na pasta `data`.
 
-5. **Gerar dados fictícios**:
-   - Execute o notebook `notebooks/criacao_dados_ficticios.ipynb` no Jupyter Notebook.
+### Extração de Dados do Facebook Ads
 
-6. **Analisar dados**:
+O código está preparado para extrair dados de campanhas do Facebook Ads através da API do Facebook Graph. Para configurar a API e extrair dados reais, siga os passos abaixo:
+
+1. **Criar uma aplicação no Facebook Developers**:
+   - Acesse [Facebook Developers](https://developers.facebook.com/) e crie uma nova aplicação.
+   - Adicione o produto "Marketing API" à sua aplicação.
+
+2. **Gerar um Token de Acesso**:
+   - Vá para a seção "Ferramentas" no Facebook Developers e gere um token de acesso para autenticação.
+
+3. **Configurar o código**:
+   - Insira o token de acesso e outras credenciais necessárias no arquivo `config.json` localizado na pasta `data`.
+
+4. **Extração dos Dados**:
+   - Se houver campanhas ativas configuradas na API do Facebook, o código automaticamente extrairá esses dados.
+   - Caso não existam dados reais, o código gerará automaticamente dados fictícios para fins de demonstração.
+
+5. **Gerar dados fictícios (se necessário)**:
+   - Execute o notebook `notebooks/criacao_dados_ficticios.ipynb` no Jupyter Notebook para gerar dados fictícios.
+
+### Análise e Visualização de Dados
+
+1. **Analisar dados**:
    - Execute o notebook `notebooks/data_analysis.ipynb` para análise de dados.
 
-7. **Visualizar dados**:
+2. **Visualizar dados**:
    - Execute o notebook `notebooks/data_visualization.ipynb` para visualização de dados.
 
-8. **Executar o dashboard**:
-   - Inicie o servidor do Dash:
+### Executar o Dashboard
+
+1. **Iniciar o servidor do Dash**:
+   - Execute o seguinte comando para iniciar o dashboard:
      ```bash
      python src/dashboard.py
      ```
@@ -122,4 +146,3 @@ Este projeto está licenciado sob os termos da licença MIT.
 ## 🤝 Contribuição
 
 Sinta-se à vontade para abrir issues e enviar pull requests. Toda contribuição é bem-vinda!
-
